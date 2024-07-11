@@ -1,6 +1,7 @@
 import Text from "./components/Text";
 import ComboRadio from "./components/ComboRadio";
 import ComboCheckbox from "./components/ComboCheckbox";
+import TodoList from "./components/TodoList";
 
 const cars = [
   { id: 1, name: "BMW" },
@@ -16,6 +17,7 @@ export default function TwoWayBinding() {
       <Text />
       <ComboRadio data={cars} />
       <ComboCheckbox data={cars} />
+      <TodoList />
     </>
   );
 }
