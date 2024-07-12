@@ -1,10 +1,10 @@
 import "./App.css";
-import UseState from "./react-hooks";
+import { UseEffect } from "./react-hooks";
 
 function App() {
   return (
     <div className="App">
-      <UseState />
+      <UseEffect />
     </div>
   );
 }
