@@ -1,10 +1,10 @@
 import "./App.css";
-import { UseEffect } from "./react-hooks";
+import { UseLayoutEffect } from "./react-hooks";
 
 function App() {
   return (
     <div className="App">
-      <UseEffect />
+      <UseLayoutEffect />
     </div>
   );
 }
