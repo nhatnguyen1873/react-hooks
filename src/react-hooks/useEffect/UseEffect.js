@@ -1,7 +1,12 @@
-import TitleText from "./components/TitleText";
-import ContentTabs from "./components/ContentTabs";
-import GoToTop from "./components/GoToTop";
 import { useState } from "react";
+
+import StopWatch from "./components/StopWatch";
+import WindowWidth from "./components/WindowWidth";
+import TitleInput from "./components/TitleInput";
+import Subscription from "./components/Subscription";
+import PreviewAvatar from "./components/PreviewAvatar";
+import ContentTabs from "./components/ContentTabs";
+import GoToTopButton from "./components/GoToTopButton";
 
 const tabs = [
   {
@@ -36,6 +41,21 @@ const tabs = [
   },
 ];
 
+const channels = [
+  {
+    id: 1,
+    name: "ReactJS News",
+  },
+  {
+    id: 2,
+    name: "VueJS News",
+  },
+  {
+    id: 3,
+    name: "Angular News",
+  },
+];
+
 export default function UseEffect() {
   const [toggle, setToggle] = useState(false);
 
@@ -49,9 +69,13 @@ export default function UseEffect() {
       </button>
       {toggle && (
         <>
-          <TitleText />
+          <StopWatch />
+          <WindowWidth />
+          <TitleInput />
+          <Subscription channels={channels} />
+          <PreviewAvatar />
           <ContentTabs tabs={tabs} />
-          <GoToTop />
+          <GoToTopButton />
         </>
       )}
     </>
