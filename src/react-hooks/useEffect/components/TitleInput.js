@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const DOCUMENT_TITLE = "React App";
 
-export default function TitleText() {
+export default function TitleInput() {
   const [title, setTitle] = useState("");
 
   useEffect(() => {
@@ -11,7 +11,7 @@ export default function TitleText() {
     } else {
       document.title = DOCUMENT_TITLE;
     }
-  });
+  }, [title]);
 
   return (
     <div>

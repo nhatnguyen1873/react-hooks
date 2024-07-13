@@ -13,7 +13,7 @@ export default function ContentTabs({ tabs }) {
   }, [activeTab]);
 
   return (
-    <>
+    <div style={{ marginTop: "16px" }}>
       {tabs.map((tab) => (
         <button
           key={tab.id}
@@ -30,6 +30,6 @@ export default function ContentTabs({ tabs }) {
           ))}
         </ul>
       )}
-    </>
+    </div>
   );
 }
