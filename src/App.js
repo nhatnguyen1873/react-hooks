@@ -1,10 +1,10 @@
 import "./App.css";
-import { UseRef } from "./react-hooks";
+import { Memo } from "./hoc";
 
 function App() {
   return (
     <div className="App">
-      <UseRef />
+      <Memo />
     </div>
   );
 }
