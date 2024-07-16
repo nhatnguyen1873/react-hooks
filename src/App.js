@@ -1,10 +1,16 @@
 import "./App.css";
-import { UseImperativeHandle } from "./react-hooks";
+import Count from "./components/Count";
+import TwoWayBinding from "./components/TwoWayBinding";
+import CarList from "./components/CarList";
+
+const cars = ["BMW", "Mercedes", "Audi", "Porsche", "Lexus"];
 
 function App() {
   return (
     <div className="App">
-      <UseImperativeHandle />
+      <Count />
+      <TwoWayBinding />
+      <CarList cars={cars} />
     </div>
   );
 }
