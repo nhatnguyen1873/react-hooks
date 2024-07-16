@@ -1,10 +1,10 @@
 import "./App.css";
-import { UseReducer } from "./react-hooks";
+import { UseContext } from "./react-hooks";
 
 function App() {
   return (
     <div className="App">
-      <UseReducer />
+      <UseContext />
     </div>
   );
 }
