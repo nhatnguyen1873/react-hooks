@@ -4,20 +4,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-// Fake comments
-const emit = (id) => {
-  setInterval(() => {
-    window.dispatchEvent(
-      new CustomEvent(`channel-${id}`, {
-        detail: `Comments from channel ${id}`,
-      })
-    );
-  }, 1000);
-};
-emit(1);
-emit(2);
-emit(3);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
