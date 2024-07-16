@@ -1,10 +1,10 @@
 import "./App.css";
-import { UseMemo } from "./react-hooks";
+import { UseReducer } from "./react-hooks";
 
 function App() {
   return (
     <div className="App">
-      <UseMemo />
+      <UseReducer />
     </div>
   );
 }
